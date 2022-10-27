@@ -27,7 +27,7 @@ const Header = () => {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link href="#features">All News</Nav.Link>
-                        <Nav.Link href="#pricing">Pricing</Nav.Link>
+                        <Nav.Link href="#pricing">Blog</Nav.Link>
                         <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">
@@ -50,14 +50,14 @@ const Header = () => {
                                     </>
                                     :
                                     <>
-                                        <Link to='/login'>Login</Link>
-                                        <Link to='/register'>Register</Link>
+                                        <Link to='/login' className='mx-2'>Login</Link>
+                                        <Link to='/register' className='mx-2'>Register</Link>
                                     </>
                             }
 
 
                         </>
-                        <Link to="/profile">
+                        <Link to="/profile" >
                             {user?.photoURL ?
                                 <Image
                                     style={{ height: '30px' }}
